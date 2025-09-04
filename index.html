@@ -18,6 +18,17 @@
             padding: 2rem 0;
             text-align: center;
         }
+        .logo-title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .logo-title-container img {
+            height: 60px;
+            width: auto;
+            vertical-align: middle;
+        }
         main {
             max-width: 700px;
             margin: 2rem auto;
@@ -28,6 +39,8 @@
         }
         h1 {
             margin: 0 0 0.5rem 0;
+            display: inline-block;
+            vertical-align: middle;
         }
         p {
             font-size: 1.15rem;
@@ -43,7 +56,10 @@
 </head>
 <body>
     <header>
-        <h1>TeleBotz</h1>
+        <div class="logo-title-container">
+            <img src="logo.jpg" alt="TeleBotz Logo">
+            <h1>TeleBotz</h1>
+        </div>
     </header>
     <main>
         <p>
