@@ -19,6 +19,20 @@
         <h2>
             Welcome to <strong>TeleBotz</strong>! 
         </h2>
+        <section class="intro-text">
+            <p> Have you ever wished you could be present in two places at the same time—especially when both moments truly matter? </p>
+            <p> Many of us have faced such situations and, inevitably, had to compromise. 
+            But what if technology could redefine presence itself? </p>
+            <p>
+                <strong>TeleBotz</strong> transforms this idea into reality by enabling meaningful remote presence—allowing you to see, interact, navigate, and connect as if you were physically there.
+            </p>
+        </section>
+        <div class="slider-container">
+            <img src="before_telebotz.png" class="slide active" alt="Before using TeleBotz">
+            <img src="after_telebotz.png" class="slide" alt="After using TeleBotz">
+        </div>
+
+
         <p>
             TeleBotz is a mobile augmented robotic technology to realise telepresence robot for remote interaction and navigation in public places.
         </p>
@@ -26,17 +40,28 @@
         <div class="image-container">
             <figure>
                 <img src="telebotz_components.png" alt="Components of TeleBotz">
-                <figcaption>Components of TeleBotz</figcaption>
+                <figcaption>Figure 1. Components of TeleBotz</figcaption>
             </figure>
 
             <figure>
                 <img src="telebotz_operations.png" alt="TeleBotz Operations">
-                <figcaption>TeleBotz Operations</figcaption>
+                <figcaption>Figure 2. TeleBotz Operations</figcaption>
             </figure>
         </div>
     </main>
     <div class="footer">
-        &copy; 2025 TeleBotz &mdash; Sample Website
+        &copy; 2025 TeleBotz &mdash; Product description website
     </div>
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let index = 0;
+
+        setInterval(() => {
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+        }, 3000); // change image every 3 seconds
+    </script>
+
 </body>
 </html>

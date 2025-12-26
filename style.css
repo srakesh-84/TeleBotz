@@ -33,7 +33,7 @@ header {
 
 /* ===== Main Content ===== */
 main {
-    max-width: 700px;
+    max-width: 90%;
     margin: 2rem auto;
     background: #ffffff;
     border-radius: 12px;
@@ -63,7 +63,7 @@ main p {
 
 .image-container figure {
     text-align: center;
-    max-width: 300px;
+    max-width: 80%;
 }
 
 .image-container img {
@@ -85,3 +85,37 @@ main p {
     padding: 1rem 0;
     font-size: 0.95rem;
 }
+
+.intro-text p {
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #2f3640;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== Image Slider ===== */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+
