@@ -1,67 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" type="image/png" href="telebotz_favicon.png">
 <head>
     <meta charset="UTF-8">
-    <title>TeleBotz</title>
-    <meta name="description" content="TeleBotz is a sample website for demonstrating a bot-powered platform.">
+    <title>TeleBotz | Telepresence Robots for Public Spaces</title>
+    <meta name="description" content="TeleBotz builds telepresence robots for hospitals, campuses, transportation hubs, and other public places.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="telebotz_favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo-title-container">
+    <header class="site-header">
+        <div class="brand">
             <img src="telebotz_logo.jpg" alt="TeleBotz Logo">
-            <span class="welcome-text">Welcome to TeleBotz.in!</span>
+            <div>
+                <h1>TeleBotz</h1>
+                <p>Presence without boundaries</p>
+            </div>
         </div>
+        <nav aria-label="Primary" class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#usecases">Usecases</a></li>
+                <li><a href="#deployments">Deployments</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <h2>
-            Welcome to <strong>TeleBotz</strong>! 
-        </h2>
-        <section class="intro-text">
-            <p> Have you ever wished you could be present in two places at the same time—especially when both moments truly matter? </p>
-            <p> Many of us have faced such situations and, inevitably, had to compromise. 
-            But what if technology could redefine presence itself? </p>
+        <section id="home" class="content-card hero-section">
+            <h2>Home</h2>
             <p>
-                <strong>TeleBotz</strong> transforms this idea into reality by enabling meaningful remote presence—allowing you to see, interact, navigate, and connect as if you were physically there.
+                TeleBotz enables remote experts, executives, and caregivers to be present in public places through
+                intelligent telepresence robots. We combine mobility, two-way communication, and real-time control to
+                make remote interaction feel natural and immediate.
+            </p>
+            <div class="slider-container">
+                <img src="before_telebotz.png" class="slide active" alt="Before using TeleBotz">
+                <img src="after_telebotz.png" class="slide" alt="After using TeleBotz">
+            </div>
+        </section>
+
+        <section id="products" class="content-card">
+            <h2>Products</h2>
+            <p>
+                Our product family is designed for public-space operations with secure connectivity, intuitive controls,
+                and robust hardware for daily usage.
+            </p>
+            <ul>
+                <li><strong>TeleBotz Core:</strong> Essential telepresence system for indoor navigation and communication.</li>
+                <li><strong>TeleBotz Assist:</strong> Accessibility-focused robot for patient support, guidance, and remote consultation.</li>
+                <li><strong>TeleBotz Pro:</strong> Enterprise-grade deployment package with fleet management and analytics.</li>
+            </ul>
+            <div class="image-container">
+                <figure>
+                    <img src="telebotz_components.png" alt="Components of TeleBotz">
+                    <figcaption>Components that power reliable telepresence.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="usecases" class="content-card">
+            <h2>Usecases</h2>
+            <ul>
+                <li><strong>Hospitals:</strong> Remote specialist rounds, family visits, and care-team coordination.</li>
+                <li><strong>Airports & Transit:</strong> Passenger assistance, multilingual support, and incident response.</li>
+                <li><strong>Campuses:</strong> Virtual guest lectures, accessibility support, and administrative walkthroughs.</li>
+                <li><strong>Retail & Events:</strong> Remote concierge services and VIP guided interactions.</li>
+            </ul>
+        </section>
+
+        <section id="deployments" class="content-card">
+            <h2>Deployments</h2>
+            <p>
+                TeleBotz works with facilities teams to deploy quickly and safely in high-footfall environments.
+                Our deployment model includes planning, onboarding, pilot validation, and scale-up support.
+            </p>
+            <div class="image-container">
+                <figure>
+                    <img src="telebotz_operations.png" alt="TeleBotz operations workflow">
+                    <figcaption>Operational workflow across public-place deployments.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="about" class="content-card">
+            <h2>About us</h2>
+            <p>
+                We are a startup focused on making telepresence practical for public spaces. At TeleBotz, we believe
+                people should be able to participate, support, and lead from anywhere without losing the human touch.
             </p>
         </section>
-        <div class="slider-container">
-            <img src="before_telebotz.png" class="slide active" alt="Before using TeleBotz">
-            <img src="after_telebotz.png" class="slide" alt="After using TeleBotz">
-        </div>
 
-
-        <p>
-            TeleBotz is a mobile augmented robotic technology to realise telepresence robot for remote interaction and navigation in public places.
-        </p>
-        <!-- Image Section with Captions -->
-        <div class="image-container">
-            <figure>
-                <img src="telebotz_components.png" alt="Components of TeleBotz">
-                <figcaption>Figure 1. Components of TeleBotz</figcaption>
-            </figure>
-
-            <figure>
-                <img src="telebotz_operations.png" alt="TeleBotz Operations">
-                <figcaption>Figure 2. TeleBotz Operations</figcaption>
-            </figure>
-        </div>
+        <section id="contact" class="content-card">
+            <h2>Contact us</h2>
+            <p>Let’s discuss your facility, workflow, and pilot requirements.</p>
+            <ul class="contact-list">
+                <li><strong>Email:</strong> hello@telebotz.in</li>
+                <li><strong>Phone:</strong> +91 98765 43210</li>
+                <li><strong>Location:</strong> Bengaluru, India</li>
+            </ul>
+        </section>
     </main>
-    <div class="footer">
-        &copy; 2025 TeleBotz &mdash; Product description website
-    </div>
+
+    <footer class="footer">
+        &copy; 2026 TeleBotz &mdash; Telepresence Robots for Public Places
+    </footer>
+
     <script>
-        let slides = document.querySelectorAll('.slide');
+        const slides = document.querySelectorAll('.slide');
         let index = 0;
 
         setInterval(() => {
             slides[index].classList.remove('active');
             index = (index + 1) % slides.length;
             slides[index].classList.add('active');
-        }, 3000); // change image every 3 seconds
+        }, 3000);
     </script>
-
 </body>
 </html>
