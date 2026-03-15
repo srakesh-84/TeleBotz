@@ -2,111 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TeleBotz | Telepresence Robots for Public Spaces</title>
-    <meta name="description" content="TeleBotz builds telepresence robots for hospitals, campuses, transportation hubs, and other public places.">
+    <title>TeleBotz | Smart Telepresence for Public Spaces</title>
+    <meta name="description" content="TeleBotz builds next-generation telepresence robots for hospitals, transit hubs, campuses, and public places.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="telebotz_favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="brand">
-            <img src="telebotz_logo.jpg" alt="TeleBotz Logo">
-            <div>
-                <h1>TeleBotz</h1>
-                <p>Presence without boundaries</p>
-            </div>
-        </div>
-        <nav aria-label="Primary" class="main-nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#usecases">Usecases</a></li>
-                <li><a href="#deployments">Deployments</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#contact">Contact us</a></li>
-            </ul>
+    <header class="topbar">
+        <a class="logo-wrap" href="#home">
+            <img src="telebotz_logo.jpg" alt="TeleBotz logo">
+            <span>TeleBotz</span>
+        </a>
+        <nav aria-label="Main Navigation">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#usecases">Usecases</a>
+            <a href="#deployments">Deployments</a>
+            <a href="#about">About us</a>
+            <a href="#contact">Contact us</a>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="content-card hero-section">
-            <h2>Home</h2>
-            <p>
-                TeleBotz enables remote experts, executives, and caregivers to be present in public places through
-                intelligent telepresence robots. We combine mobility, two-way communication, and real-time control to
-                make remote interaction feel natural and immediate.
-            </p>
-            <div class="slider-container">
-                <img src="before_telebotz.png" class="slide active" alt="Before using TeleBotz">
-                <img src="after_telebotz.png" class="slide" alt="After using TeleBotz">
+        <section id="home" class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Telepresence Robots for Public Places</p>
+                <h1>Be anywhere. Support everyone.</h1>
+                <p>
+                    TeleBotz helps hospitals, campuses, airports, and civic spaces deliver instant remote presence with
+                    mobile telepresence robots that feel natural, safe, and reliable.
+                </p>
+                <div class="hero-cta">
+                    <a href="#products" class="btn btn-primary">Explore Products</a>
+                    <a href="#contact" class="btn btn-secondary">Book a Demo</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="slider-container">
+                    <img src="before_telebotz.png" class="slide active" alt="Before TeleBotz">
+                    <img src="after_telebotz.png" class="slide" alt="After TeleBotz">
+                </div>
             </div>
         </section>
 
-        <section id="products" class="content-card">
+        <section id="products" class="panel">
             <h2>Products</h2>
-            <p>
-                Our product family is designed for public-space operations with secure connectivity, intuitive controls,
-                and robust hardware for daily usage.
-            </p>
-            <ul>
-                <li><strong>TeleBotz Core:</strong> Essential telepresence system for indoor navigation and communication.</li>
-                <li><strong>TeleBotz Assist:</strong> Accessibility-focused robot for patient support, guidance, and remote consultation.</li>
-                <li><strong>TeleBotz Pro:</strong> Enterprise-grade deployment package with fleet management and analytics.</li>
-            </ul>
-            <div class="image-container">
-                <figure>
-                    <img src="telebotz_components.png" alt="Components of TeleBotz">
-                    <figcaption>Components that power reliable telepresence.</figcaption>
-                </figure>
+            <div class="cards-3">
+                <article class="card">
+                    <h3>TeleBotz Core</h3>
+                    <p>Reliable indoor telepresence with two-way audio/video and smooth mobility controls.</p>
+                </article>
+                <article class="card">
+                    <h3>TeleBotz Assist</h3>
+                    <p>Support-focused model for patient communication, visitor guidance, and service counters.</p>
+                </article>
+                <article class="card">
+                    <h3>TeleBotz Fleet</h3>
+                    <p>Multi-robot management with centralized dashboards, health monitoring, and usage analytics.</p>
+                </article>
             </div>
+            <figure class="wide-image">
+                <img src="telebotz_components.png" alt="TeleBotz components">
+                <figcaption>Built from robust components for everyday operations.</figcaption>
+            </figure>
         </section>
 
-        <section id="usecases" class="content-card">
+        <section id="usecases" class="panel">
             <h2>Usecases</h2>
-            <ul>
-                <li><strong>Hospitals:</strong> Remote specialist rounds, family visits, and care-team coordination.</li>
-                <li><strong>Airports & Transit:</strong> Passenger assistance, multilingual support, and incident response.</li>
-                <li><strong>Campuses:</strong> Virtual guest lectures, accessibility support, and administrative walkthroughs.</li>
-                <li><strong>Retail & Events:</strong> Remote concierge services and VIP guided interactions.</li>
-            </ul>
-        </section>
-
-        <section id="deployments" class="content-card">
-            <h2>Deployments</h2>
-            <p>
-                TeleBotz works with facilities teams to deploy quickly and safely in high-footfall environments.
-                Our deployment model includes planning, onboarding, pilot validation, and scale-up support.
-            </p>
-            <div class="image-container">
-                <figure>
-                    <img src="telebotz_operations.png" alt="TeleBotz operations workflow">
-                    <figcaption>Operational workflow across public-place deployments.</figcaption>
-                </figure>
+            <div class="chips">
+                <span>Hospital rounds</span>
+                <span>Airport assistance</span>
+                <span>Campus accessibility</span>
+                <span>Retail concierge</span>
+                <span>Remote inspection</span>
+                <span>Event support</span>
             </div>
         </section>
 
-        <section id="about" class="content-card">
+        <section id="deployments" class="panel split">
+            <div>
+                <h2>Deployments</h2>
+                <p>
+                    From pilot to scale, TeleBotz supports planning, workflow mapping, team onboarding, and operational
+                    rollout across high-footfall public environments.
+                </p>
+                <ul>
+                    <li>Site survey and connectivity planning</li>
+                    <li>Safety-first onboarding and SOP setup</li>
+                    <li>Real-time performance monitoring</li>
+                </ul>
+            </div>
+            <figure class="wide-image">
+                <img src="telebotz_operations.png" alt="TeleBotz deployment operations">
+                <figcaption>A proven path from trial to daily mission-critical use.</figcaption>
+            </figure>
+        </section>
+
+        <section id="about" class="panel">
             <h2>About us</h2>
             <p>
-                We are a startup focused on making telepresence practical for public spaces. At TeleBotz, we believe
-                people should be able to participate, support, and lead from anywhere without losing the human touch.
+                TeleBotz is a startup focused on human-centered telepresence. We build practical robotics that let people
+                communicate, assist, and lead from anywhere.
             </p>
         </section>
 
-        <section id="contact" class="content-card">
+        <section id="contact" class="panel contact-panel">
             <h2>Contact us</h2>
-            <p>Let’s discuss your facility, workflow, and pilot requirements.</p>
-            <ul class="contact-list">
-                <li><strong>Email:</strong> hello@telebotz.in</li>
-                <li><strong>Phone:</strong> +91 98765 43210</li>
-                <li><strong>Location:</strong> Bengaluru, India</li>
-            </ul>
+            <p>Tell us about your site and we’ll design a pilot plan for your organization.</p>
+            <div class="contact-grid">
+                <p><strong>Email:</strong> hello@telebotz.in</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Location:</strong> Bengaluru, India</p>
+            </div>
         </section>
     </main>
 
-    <footer class="footer">
-        &copy; 2026 TeleBotz &mdash; Telepresence Robots for Public Places
+    <footer>
+        <p>&copy; 2026 TeleBotz — Smart Telepresence for Public Spaces</p>
     </footer>
 
     <script>
