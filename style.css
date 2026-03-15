@@ -59,6 +59,23 @@ body {
     object-fit: cover;
 }
 
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.brand-text strong {
+    font-size: 1.2rem;
+}
+
+.brand-text small {
+    font-size: 0.75rem;
+    color: var(--primary);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
