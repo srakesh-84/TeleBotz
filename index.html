@@ -3,117 +3,470 @@
 <head>
     <meta charset="UTF-8">
     <title>TeleBotz | Telepresence Robots for Public Spaces</title>
-    <meta name="description" content="TeleBotz builds telepresence robots for hospitals, campuses, transportation hubs, and other public places.">
+    <meta name="description" content="TeleBotz delivers intelligent telepresence robots for hospitals, campuses, and transportation hubs. Enable remote presence with secure connectivity and intuitive control.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="telebotz_favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation Header -->
     <header class="site-header">
-        <div class="brand">
-            <img src="telebotz_logo_transparent.png" alt="TeleBotz Logo">
+        <div class="header-container">
+            <div class="brand">
+                <img src="telebotz_logo_transparent.png" alt="TeleBotz Logo" class="logo">
+                <span class="brand-tagline">Presence Redefined</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav aria-label="Primary" class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#usecases" class="nav-link">Use Cases</a></li>
+                    <li><a href="#deployments" class="nav-link">Deployments</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link cta-nav">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav aria-label="Primary" class="main-nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#usecases">Usecases</a></li>
-                <li><a href="#deployments">Deployments</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#contact">Contact us</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section id="home" class="content-card hero-section">
-            <h2>Home</h2>
-            <p>
-                TeleBotz enables remote experts, executives, and caregivers to be present in public places through
-                intelligent telepresence robots. We combine mobility, two-way communication, and real-time control to
-                make remote interaction feel natural and immediate.
-            </p>
-            <div class="slider-container">
-                <img src="before_telebotz.png" class="slide active" alt="Before using TeleBotz">
-                <img src="after_telebotz.png" class="slide" alt="After using TeleBotz">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Remote Presence, Real Impact</h1>
+                <p class="hero-subtitle">Deploy intelligent telepresence robots across your facilities. Enable remote experts, leaders, and caregivers to be present anywhere, anytime.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Schedule a Demo</a>
+                    <a href="#products" class="btn btn-secondary">Explore Products</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Active Deployments</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Remote Sessions</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="slider-container">
+                    <img src="before_telebotz.png" class="slide active" alt="Healthcare before TeleBotz">
+                    <img src="after_telebotz.png" class="slide" alt="Healthcare with TeleBotz">
+                </div>
+                <div class="slider-dots">
+                    <button class="dot active" aria-label="Slide 1"></button>
+                    <button class="dot" aria-label="Slide 2"></button>
+                </div>
             </div>
         </section>
 
-        <section id="products" class="content-card">
-            <h2>Products</h2>
-            <p>
-                Our product family is designed for public-space operations with secure connectivity, intuitive controls,
-                and robust hardware for daily usage.
-            </p>
-            <ul>
-                <li><strong>TeleBotz Core:</strong> Essential telepresence system for indoor navigation and communication.</li>
-                <li><strong>TeleBotz Assist:</strong> Accessibility-focused robot for patient support, guidance, and remote consultation.</li>
-                <li><strong>TeleBotz Pro:</strong> Enterprise-grade deployment package with fleet management and analytics.</li>
-            </ul>
-            <div class="image-container">
+        <!-- Trust Badges Section -->
+        <section class="trust-section">
+            <div class="trust-content">
+                <h3>Trusted by Leading Institutions</h3>
+                <div class="trust-badges">
+                    <div class="badge">
+                        <i class="fas fa-hospital-user"></i>
+                        <span>Hospitals & Healthcare</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-plane"></i>
+                        <span>Airports & Transit</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-university"></i>
+                        <span>Universities</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-store"></i>
+                        <span>Retail & Events</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="content-section">
+            <div class="section-header">
+                <h2>Our Product Line</h2>
+                <p>Purpose-built solutions for every scale and use case</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>TeleBotz Core</h3>
+                    <p class="product-desc">Essential telepresence system with indoor navigation and crystal-clear two-way communication.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> HD video & audio</li>
+                        <li><i class="fas fa-check"></i> Intuitive controls</li>
+                        <li><i class="fas fa-check"></i> 8-hour battery</li>
+                        <li><i class="fas fa-check"></i> Compact design</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Learn More</a>
+                </div>
+
+                <div class="product-card featured">
+                    <div class="badge-featured">Most Popular</div>
+                    <div class="product-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>TeleBotz Assist</h3>
+                    <p class="product-desc">Accessibility-focused robot for patient support, guidance, and remote specialist consultation.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Advanced navigation</li>
+                        <li><i class="fas fa-check"></i> Patient tracking</li>
+                        <li><i class="fas fa-check"></i> Secure connectivity</li>
+                        <li><i class="fas fa-check"></i> 24/7 monitoring</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Request Demo</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>TeleBotz Pro</h3>
+                    <p class="product-desc">Enterprise-grade deployment package with fleet management, analytics, and priority support.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Fleet dashboard</li>
+                        <li><i class="fas fa-check"></i> Real-time analytics</li>
+                        <li><i class="fas fa-check"></i> Custom integration</li>
+                        <li><i class="fas fa-check"></i> Dedicated support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div class="image-showcase">
                 <figure>
-                    <img src="telebotz_components.png" alt="Components of TeleBotz">
-                    <figcaption>Components that power reliable telepresence.</figcaption>
+                    <img src="telebotz_components.png" alt="TeleBotz Components Overview">
+                    <figcaption>Advanced hardware designed for reliability and durability</figcaption>
                 </figure>
             </div>
         </section>
 
-        <section id="usecases" class="content-card">
-            <h2>Usecases</h2>
-            <ul>
-                <li><strong>Hospitals:</strong> Remote specialist rounds, family visits, and care-team coordination.</li>
-                <li><strong>Airports & Transit:</strong> Passenger assistance, multilingual support, and incident response.</li>
-                <li><strong>Campuses:</strong> Virtual guest lectures, accessibility support, and administrative walkthroughs.</li>
-                <li><strong>Retail & Events:</strong> Remote concierge services and VIP guided interactions.</li>
-            </ul>
+        <!-- Use Cases Section -->
+        <section id="usecases" class="content-section alt-bg">
+            <div class="section-header">
+                <h2>Real-World Applications</h2>
+                <p>Transforming how organizations serve and connect</p>
+            </div>
+            <div class="usecases-grid">
+                <div class="usecase-card">
+                    <div class="usecase-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Healthcare</h3>
+                    <ul>
+                        <li>Remote specialist rounds</li>
+                        <li>Family visitation programs</li>
+                        <li>Care-team coordination</li>
+                        <li>Patient monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="usecase-card">
+                    <div class="usecase-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Airports & Transit</h3>
+                    <ul>
+                        <li>Passenger assistance</li>
+                        <li>Multilingual support</li>
+                        <li>Incident response</li>
+                        <li>Wayfinding assistance</li>
+                    </ul>
+                </div>
+
+                <div class="usecase-card">
+                    <div class="usecase-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <ul>
+                        <li>Virtual guest lectures</li>
+                        <li>Accessibility support</li>
+                        <li>Campus tours</li>
+                        <li>Administrative operations</li>
+                    </ul>
+                </div>
+
+                <div class="usecase-card">
+                    <div class="usecase-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3>Retail & Events</h3>
+                    <ul>
+                        <li>Remote concierge services</li>
+                        <li>VIP guided experiences</li>
+                        <li>Event management</li>
+                        <li>Brand engagement</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="deployments" class="content-card">
-            <h2>Deployments</h2>
-            <p>
-                TeleBotz works with facilities teams to deploy quickly and safely in high-footfall environments.
-                Our deployment model includes planning, onboarding, pilot validation, and scale-up support.
-            </p>
-            <div class="image-container">
+        <!-- Deployments Section -->
+        <section id="deployments" class="content-section">
+            <div class="section-header">
+                <h2>Deployment Made Simple</h2>
+                <p>From planning to scale, we manage every step</p>
+            </div>
+            <div class="deployment-process">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Planning & Assessment</h4>
+                    <p>We understand your facility's needs, workflows, and environment to design the perfect deployment.</p>
+                </div>
+                <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Onboarding & Training</h4>
+                    <p>Comprehensive staff training and documentation ensure smooth adoption across your organization.</p>
+                </div>
+                <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Pilot Validation</h4>
+                    <p>Run a controlled pilot program with support to measure impact and refine operations.</p>
+                </div>
+                <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Scale & Support</h4>
+                    <p>Roll out to full deployment with ongoing optimization and 24/7 technical support.</p>
+                </div>
+            </div>
+            <div class="image-showcase">
                 <figure>
-                    <img src="telebotz_operations.png" alt="TeleBotz operations workflow">
-                    <figcaption>Operational workflow across public-place deployments.</figcaption>
+                    <img src="telebotz_operations.png" alt="TeleBotz Operational Workflow">
+                    <figcaption>Streamlined operations across public-space deployments</figcaption>
                 </figure>
             </div>
         </section>
 
-        <section id="about" class="content-card">
-            <h2>About us</h2>
-            <p>
-                We are a startup focused on making telepresence practical for public spaces. At TeleBotz, we believe
-                people should be able to participate, support, and lead from anywhere without losing the human touch.
-            </p>
+        <!-- About Section -->
+        <section id="about" class="content-section alt-bg">
+            <div class="section-header">
+                <h2>About TeleBotz</h2>
+                <p>Our mission and values</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Making Remote Presence Personal</h3>
+                    <p>We are a startup reimagining how people interact across distance. At TeleBotz, we believe remote presence should feel natural, not artificial. Whether you're a specialist checking on patients, a campus leader engaging with students, or a service provider helping travelers—our robots bridge the gap with security, reliability, and human touch.</p>
+                    <p>Founded with a passion for accessibility and technology, we're committed to making telepresence practical for everyday public spaces.</p>
+                    <div class="values-list">
+                        <div class="value-item">
+                            <i class="fas fa-infinity"></i>
+                            <div>
+                                <h4>Reliability</h4>
+                                <p>Hardware and software engineered for 24/7 operation</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <h4>Security</h4>
+                                <p>Enterprise-grade encryption and compliance built-in</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-people-carry"></i>
+                            <div>
+                                <h4>Accessibility</h4>
+                                <p>Inclusive design for all user abilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contact" class="content-card">
-            <h2>Contact us</h2>
-            <p>Let’s discuss your facility, workflow, and pilot requirements.</p>
-            <ul class="contact-list">
-                <li><strong>Email:</strong> telebotz.in@gmail.com</li>
-                <li><strong>Phone:</strong> +91 8122280350</li>
-                <li><strong>Location:</strong> Coimbatore, India</li>
-            </ul>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Facility?</h2>
+                <p>See how TeleBotz can enhance operations, improve service delivery, and create new opportunities.</p>
+                <a href="#contact" class="btn btn-primary btn-large">Get Started Today</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <div class="section-header">
+                <h2>Let's Connect</h2>
+                <p>Tell us about your facility and requirements</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-form-area">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="organization">Organization</label>
+                            <input type="text" id="organization" name="organization" placeholder="Hospital / University / Airport">
+                        </div>
+                        <div class="form-group">
+                            <label for="usecase">Primary Use Case *</label>
+                            <select id="usecase" name="usecase" required>
+                                <option value="">Select a use case</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="education">Education</option>
+                                <option value="transit">Airports & Transit</option>
+                                <option value="retail">Retail & Events</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Tell us about your needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        <p class="form-note">We'll respond within 24 hours</p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p><a href="mailto:telebotz.in@gmail.com">telebotz.in@gmail.com</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+918122280350">+91 8122 280 350</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Coimbatore, India</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Response Time</h4>
+                        <p>Usually within 24 hours</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-        &copy; 2026 TeleBotz &mdash; Presence Redefined
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>TeleBotz</h4>
+                <p>Enabling presence everywhere</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#usecases">Use Cases</a></li>
+                    <li><a href="#deployments">Deployments</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TeleBotz &mdash; Presence Redefined | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
     </footer>
 
     <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileMenuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            });
+        });
+
+        // Image Slider
         const slides = document.querySelectorAll('.slide');
-        let index = 0;
+        const dots = document.querySelectorAll('.dot');
+        let slideIndex = 0;
+
+        function showSlide(n) {
+            slides[slideIndex].classList.remove('active');
+            dots[slideIndex].classList.remove('active');
+            
+            slideIndex = (n + slides.length) % slides.length;
+            
+            slides[slideIndex].classList.add('active');
+            dots[slideIndex].classList.add('active');
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showSlide(index));
+        });
 
         setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-        }, 3000);
+            showSlide(slideIndex + 1);
+        }, 4000);
+
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // In a real application, you would send this data to a server
+                alert('Thank you! We will contact you within 24 hours.');
+                contactForm.reset();
+            });
+        }
+
+        // Smooth scroll behavior for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>
