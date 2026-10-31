@@ -136,3 +136,14 @@ body { background: #f7fafb; color: var(--vg-ink); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* Smartphone-first platform architecture */
+.vg-platform { text-align: center; background: #edf7f8; max-width: none; }
+.vg-platform > * { max-width: 1200px; margin-left: auto; margin-right: auto; }
+.vg-platform-apps { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.25rem; margin-top: 2rem; text-align: left; }
+.vg-platform-apps .vg-side-card { min-height: 0; align-items: center; }
+.vg-hardware-title { margin: 3rem 0 0; color: var(--vg-ink); font-size: 1.25rem; }
+.vg-platform .vg-hardware-title + .vg-platform-apps { margin-top: 1.25rem; }
+@media (max-width: 640px) {
+  .vg-platform-apps { grid-template-columns: 1fr; }
+}
