@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleBotz | Showrooms & Offices</title>
+  <meta name="description" content="TeleBotz helps showrooms and offices let visitors connect with real staff before arriving or walking in.">
+  <meta name="theme-color" content="#071b2c">
+  <link rel="icon" type="image/png" href="telebotz_favicon.png">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gateway.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a class="brand" href="index.html" aria-label="TeleBotz home">
+        <img src="telebotz_logo_transparent.png" alt="TeleBotz logo" class="logo">
+        <span class="brand-tagline">Presence Redefined</span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <ul>
+          <li><a class="nav-link" href="index.html#how-it-works">How it works</a></li>
+          <li><a class="nav-link" href="index.html#features">Features</a></li>
+          <li><a class="nav-link" href="use-cases.html">Use cases</a></li>
+          <li><a class="nav-link cta-nav" href="index.html#pilot">Discuss a pilot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="vg-page-hero vg-section">
+      <div class="vg-section-kicker">Use case</div>
+      <h1>Showrooms & offices</h1>
+      <p class="vg-section-lead">Let people say hello, ask questions, and get connected to the right person before they arrive.</p>
+    </section>
+
+    <section class="vg-section">
+      <div class="vg-usecase-detail">
+        <article class="vg-side-card">
+          <div class="vg-side-icon"><i class="fas fa-store"></i></div>
+          <div>
+            <h3>Why it works</h3>
+            <p>Customers and prospects often need a quick, trusted way to reach the right team. TeleBotz provides a modern welcome point that helps staff continue to serve people already in the space while remaining accessible to remote visitors.</p>
+          </div>
+        </article>
+
+        <article class="vg-side-card">
+          <div class="vg-side-icon"><i class="fas fa-handshake"></i></div>
+          <div>
+            <h3>Typical scenarios</h3>
+            <p>Product enquiries, appointment scheduling, sales conversations, office access, and visitor guidance can all start from a virtual entrance.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="vg-section vg-cta-panel">
+      <div class="vg-pilot-content">
+        <div class="vg-section-kicker">Explore a pilot</div>
+        <h2>Turn your showroom or office into a more accessible front door.</h2>
+        <p>We can help you design a queue-free, visitor-friendly first touchpoint for your team.</p>
+        <a class="vg-button vg-button-primary" href="mailto:telebotz.in@gmail.com?subject=TeleBotz%20Showroom%20Pilot">Discuss a pilot <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="vg-footer">
+    <a class="vg-footer-brand" href="index.html"><img src="telebotz_logo_transparent.png" alt=""> <span>TeleBotz</span></a>
+    <p>Presence Redefined. A virtual gateway to real-world businesses.</p>
+    <small>© <span id="year"></span> TeleBotz. All rights reserved.</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
