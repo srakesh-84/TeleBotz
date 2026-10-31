@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleBotz | Hotels & Hospitality</title>
+  <meta name="description" content="TeleBotz helps hotels and hospitality businesses connect with guests before arrival and during key moments of their stay.">
+  <meta name="theme-color" content="#071b2c">
+  <link rel="icon" type="image/png" href="telebotz_favicon.png">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gateway.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a class="brand" href="index.html" aria-label="TeleBotz home">
+        <img src="telebotz_logo_transparent.png" alt="TeleBotz logo" class="logo">
+        <span class="brand-tagline">Presence Redefined</span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <ul>
+          <li><a class="nav-link" href="index.html#how-it-works">How it works</a></li>
+          <li><a class="nav-link" href="index.html#features">Features</a></li>
+          <li><a class="nav-link" href="use-cases.html">Use cases</a></li>
+          <li><a class="nav-link cta-nav" href="index.html#pilot">Discuss a pilot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="vg-page-hero vg-section">
+      <div class="vg-section-kicker">Use case</div>
+      <h1>Hotels & hospitality</h1>
+      <p class="vg-section-lead">Create a better first impression for guests before they arrive and while they are planning their stay.</p>
+    </section>
+
+    <section class="vg-section">
+      <div class="vg-usecase-detail">
+        <article class="vg-side-card">
+          <div class="vg-side-icon"><i class="fas fa-hotel"></i></div>
+          <div>
+            <h3>Why it works</h3>
+            <p>Guests want quick reassurance about check-in, amenities, room access, and local information. A virtual gateway gives them a direct human connection without having to wait for a front desk phone to be free.</p>
+          </div>
+        </article>
+
+        <article class="vg-side-card">
+          <div class="vg-side-icon"><i class="fas fa-bell-concierge"></i></div>
+          <div>
+            <h3>Typical scenarios</h3>
+            <p>Room queries, arrival timing, check-in coordination, amenity questions, and special request support all become easier when the front desk can engage with visitors virtually.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="vg-section vg-cta-panel">
+      <div class="vg-pilot-content">
+        <div class="vg-section-kicker">Explore a pilot</div>
+        <h2>Make guest arrivals smoother from the very first contact.</h2>
+        <p>We can help you design a hospitality-first virtual guest entry experience.</p>
+        <a class="vg-button vg-button-primary" href="mailto:telebotz.in@gmail.com?subject=TeleBotz%20Hospitality%20Pilot">Discuss a pilot <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="vg-footer">
+    <a class="vg-footer-brand" href="index.html"><img src="telebotz_logo_transparent.png" alt=""> <span>TeleBotz</span></a>
+    <p>Presence Redefined. A virtual gateway to real-world businesses.</p>
+    <small>© <span id="year"></span> TeleBotz. All rights reserved.</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
