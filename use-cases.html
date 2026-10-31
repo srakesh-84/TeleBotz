@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleBotz | Use Cases</title>
+  <meta name="description" content="Explore how TeleBotz can support schools, hospitals, hotels, offices, and other physical spaces with a virtual guest entrance.">
+  <meta name="theme-color" content="#071b2c">
+  <link rel="icon" type="image/png" href="telebotz_favicon.png">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gateway.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a class="brand" href="index.html" aria-label="TeleBotz home">
+        <img src="telebotz_logo_transparent.png" alt="TeleBotz logo" class="logo">
+        <span class="brand-tagline">Presence Redefined</span>
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav" id="mobileMenuToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <ul>
+          <li><a class="nav-link" href="index.html#how-it-works">How it works</a></li>
+          <li><a class="nav-link" href="index.html#features">Features</a></li>
+          <li><a class="nav-link" href="use-cases.html">Use cases</a></li>
+          <li><a class="nav-link cta-nav" href="index.html#pilot">Discuss a pilot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="vg-page-hero vg-section">
+      <div class="vg-section-kicker">Use cases</div>
+      <h1>Another way for people to reach your place.</h1>
+      <p class="vg-section-lead">TeleBotz creates a virtual entrance for physical spaces so visitors can connect with staff before they travel, arrive, or walk in.</p>
+    </section>
+
+    <section class="vg-section">
+      <div class="vg-usecase-grid">
+        <article class="vg-usecase vg-usecase-featured">
+          <div class="vg-usecase-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+          <div class="vg-usecase-label">Example pilot setting</div>
+          <h3>Schools & colleges</h3>
+          <p>Parents, students, and guardians can speak with admissions or reception staff without needing to travel first. It helps answer questions faster and improves accessibility for remote families.</p>
+        </article>
+
+        <article class="vg-usecase">
+          <div class="vg-usecase-icon"><i class="fas fa-house-medical" aria-hidden="true"></i></div>
+          <h3>Clinics & hospitals</h3>
+          <p>Patients and families can check in, ask general questions, and connect with front-desk or care coordinators before arriving onsite.</p>
+        </article>
+
+        <article class="vg-usecase">
+          <div class="vg-usecase-icon"><i class="fas fa-hotel" aria-hidden="true"></i></div>
+          <h3>Hotels & hospitality</h3>
+          <p>Prospective guests can connect with on-site teams to ask about rooms, amenities, check-in timing, or special requests before they book or travel.</p>
+        </article>
+
+        <article class="vg-usecase">
+          <div class="vg-usecase-icon"><i class="fas fa-store" aria-hidden="true"></i></div>
+          <h3>Showrooms & offices</h3>
+          <p>Customers can approach a real team member to ask about products, services, appointments, or office access without waiting in person.</p>
+        </article>
+
+        <article class="vg-usecase">
+          <div class="vg-usecase-icon"><i class="fas fa-warehouse" aria-hidden="true"></i></div>
+          <h3>Businesses with visitor flows</h3>
+          <p>Front desks, service centers, and facilities can create a clearer visitor entry experience while staff remain focused on the people already in the building.</p>
+        </article>
+
+        <article class="vg-usecase">
+          <div class="vg-usecase-icon"><i class="fas fa-building-columns" aria-hidden="true"></i></div>
+          <h3>Public-facing spaces</h3>
+          <p>Organizations that receive repeated visitor questions can provide a simpler, always-available connection for first contact.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="vg-section vg-cta-panel">
+      <div class="vg-pilot-content">
+        <div class="vg-section-kicker">Start with a pilot</div>
+        <h2>Find the right use case for your location.</h2>
+        <p>TeleBotz is most useful when a real person at a physical site needs to help visitors without creating friction or delay.</p>
+        <a class="vg-button vg-button-primary" href="mailto:telebotz.in@gmail.com?subject=TeleBotz%20Pilot%20Discussion">Discuss a pilot <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="vg-footer">
+    <a class="vg-footer-brand" href="index.html"><img src="telebotz_logo_transparent.png" alt=""> <span>TeleBotz</span></a>
+    <p>Presence Redefined. A virtual gateway to real-world businesses.</p>
+    <small>© <span id="year"></span> TeleBotz. All rights reserved.</small>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('mobileMenuToggle');
+    const nav = document.getElementById('mainNav');
+    if (menuButton && nav) {
+      menuButton.addEventListener('click', () => {
+        const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+        menuButton.setAttribute('aria-expanded', String(!expanded));
+        menuButton.classList.toggle('active', !expanded);
+        nav.classList.toggle('active', !expanded);
+      });
+
+      nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        menuButton.classList.remove('active');
+        menuButton.setAttribute('aria-expanded', 'false');
+      }));
+    }
+
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
