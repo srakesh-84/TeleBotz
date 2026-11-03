@@ -166,3 +166,29 @@ body { background: #f7fafb; color: var(--vg-ink); }
 @media (max-width: 640px) {
   .vg-platform-apps { grid-template-columns: 1fr; }
 }
+
+
+/* TeleBotz for homes use-case page */
+.home-usecase-page .home-usecase-hero { text-align: center; padding-top: 4.5rem; padding-bottom: 2rem; }
+.home-usecase-hero h1 { margin: .9rem 0 1rem; color: var(--vg-ink); font-size: clamp(2.7rem,5vw,4.2rem); line-height: 1.08; letter-spacing: -.05em; }
+.home-usecase-hero h1 span { color: #119eaa; }
+.home-usecase-hero .vg-section-lead { margin-bottom: 1.7rem; }
+.home-usecase-visual-section { padding-top: 1rem; }
+.home-usecase-visual { margin: 0; }
+.home-usecase-visual img { display: block; width: 100%; height: auto; border-radius: 24px; border: 1px solid var(--vg-line); box-shadow: 0 24px 60px rgba(16,40,59,.12); }
+.home-usecase-visual figcaption { margin-top: .9rem; text-align: center; color: var(--vg-muted); font-size: .9rem; }
+.home-usecase-worries, .home-telebotz-offers { text-align: center; }
+.home-worry-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.1rem; margin-top: 2.5rem; text-align: left; }
+.home-worry-card, .home-comparison-card { padding: 1.7rem; background: white; border: 1px solid var(--vg-line); border-radius: 20px; box-shadow: 0 12px 30px rgba(16,40,59,.04); }
+.home-worry-card h3, .home-comparison-card h3 { margin: .2rem 0 .6rem; color: var(--vg-ink); }
+.home-worry-card p { margin: 0; color: var(--vg-muted); line-height: 1.7; font-size: .94rem; }
+.home-solutions { max-width: none; background: #edf7f8; text-align: center; }
+.home-comparison-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.2rem; max-width: 1000px; margin: 2.5rem auto 0; text-align: left; }
+.home-comparison-card ul { margin: 1rem 0 0; padding-left: 1.2rem; color: var(--vg-muted); line-height: 1.85; }
+.home-offer-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin-top: 2.5rem; text-align: left; }
+.home-note { max-width: 850px; margin: 1.5rem auto 0; color: #718493; font-size: .82rem; line-height: 1.6; }
+.home-usecase-cta { margin-top: 2rem; }
+@media (max-width: 760px) {
+  .home-worry-grid, .home-comparison-grid, .home-offer-grid { grid-template-columns: 1fr; }
+  .home-usecase-page .home-usecase-hero { padding-top: 3rem; }
+}
