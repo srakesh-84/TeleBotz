@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleBotz for Hotel Dining Tables | A Personalised Waiter at Every Table</title>
+  <meta name="description" content="Give every dining table a personalised remote waiter with TeleBotz. Choose a live human attendant, an AI dining assistant, or an inclusive remote-work option.">
+  <meta name="theme-color" content="#071b2c">
+  <link rel="icon" type="image/png" href="telebotz_favicon.png">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gateway.css">
+  <style>
+    .dining-hero { text-align:center; padding-top:4.5rem; padding-bottom:2rem; }
+    .dining-hero h1 { margin:.9rem 0 1rem; color:var(--vg-ink); font-size:clamp(2.7rem,5vw,4.2rem); line-height:1.08; letter-spacing:-.05em; background:none; -webkit-text-fill-color:currentColor; }
+    .dining-hero h1 span { color:#119eaa; }
+    .dining-tagline { max-width:820px; margin:0 auto 1.4rem; color:var(--vg-muted); font-size:1.18rem; line-height:1.7; }
+    .dining-visual { margin:0 auto; max-width:1000px; }
+    .dining-visual img { display:block; width:100%; height:auto; border-radius:24px; border:1px solid var(--vg-line); box-shadow:0 24px 60px rgba(16,40,59,.12); }
+    .dining-visual figcaption { margin-top:1rem; color:var(--vg-muted); font-size:.92rem; text-align:center; }
+    .dining-section-title { text-align:center; }
+    .dining-problem-grid,.dining-types-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.1rem; margin-top:2.5rem; }
+    .dining-info-card,.dining-type-card { padding:1.6rem; background:#fff; border:1px solid var(--vg-line); border-radius:20px; box-shadow:0 10px 28px rgba(16,40,59,.035); }
+    .dining-info-card h3,.dining-type-card h3 { margin:.2rem 0 .65rem; color:var(--vg-ink); font-size:1.15rem; }
+    .dining-info-card p,.dining-type-card p { margin:0; color:var(--vg-muted); line-height:1.75; }
+    .dining-type-card { position:relative; padding:1.8rem; }
+    .dining-type-card .vg-usecase-icon { margin-bottom:1rem; }
+    .dining-type-card ul { margin:1rem 0 0; padding-left:1.2rem; color:var(--vg-muted); line-height:1.85; }
+    .dining-type-card.featured { border-color:#83d5d9; background:linear-gradient(180deg,#fff,#f2fbfb); }
+    .dining-type-label { display:inline-block; margin-bottom:.7rem; color:#0c929d; font-size:.72rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+    .dining-flow { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1rem; margin-top:2.5rem; }
+    .dining-flow-step { padding:1.35rem; border-radius:18px; background:#fff; border:1px solid var(--vg-line); }
+    .dining-flow-step strong { display:block; margin:.7rem 0 .35rem; color:var(--vg-ink); }
+    .dining-flow-step p { margin:0; color:var(--vg-muted); font-size:.9rem; line-height:1.65; }
+    .dining-note { max-width:900px; margin:1.6rem auto 0; color:#718493; font-size:.84rem; line-height:1.7; text-align:center; }
+    @media(max-width:760px){.dining-problem-grid,.dining-types-grid{grid-template-columns:1fr}.dining-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.dining-hero{padding-top:3rem}}
+    @media(max-width:480px){.dining-flow{grid-template-columns:1fr}.dining-visual img{border-radius:16px}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a class="brand" href="index.html" aria-label="TeleBotz home">
+        <img src="telebotz_logo_transparent.png" alt="TeleBotz logo" class="logo">
+        <span class="brand-tagline">Presence Redefined</span>
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav" id="mobileMenuToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <ul>
+          <li><a class="nav-link" href="index.html#how-it-works">How it works</a></li>
+          <li><a class="nav-link" href="index.html#features">Features</a></li>
+          <li><a class="nav-link" href="use-cases.html">Use cases</a></li>
+          <li><a class="nav-link cta-nav" href="index.html#pilot">Discuss a pilot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="home-usecase-page">
+    <section class="vg-section dining-hero">
+      <div class="vg-section-kicker">A more personal dining experience</div>
+      <h1>TeleBotz in <span>Hotel Dining</span></h1>
+      <p class="dining-tagline"><strong>Let your remote experts handle the talking.</strong><br>Give a personalised waiter to every dining table.</p>
+      <a class="vg-button vg-button-primary" href="#choose-waiter">Explore waiter options <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </section>
+
+    <section class="vg-section home-usecase-visual-section">
+      <figure class="dining-visual">
+        <img src="telebotz-hotel-dining.png" alt="Before and after comparison showing a frustrated restaurant guest before TeleBotz and a guest receiving a response from a remote waiter through a smartphone-based telepresence setup.">
+        <figcaption>A customer is heard and acknowledged remotely, while the on-site waiter can focus on delivering food.</figcaption>
+      </figure>
+    </section>
+
+    <section class="vg-section home-usecase-worries">
+      <div class="vg-section-kicker">The dining-table challenge</div>
+      <h2 class="dining-section-title">Good food deserves attentive service.</h2>
+      <p class="vg-section-lead">During busy periods, one waiter may be handling several tables and repeated requests. Guests can feel ignored, while staff can become overwhelmed trying to decide whom to attend to first.</p>
+      <div class="dining-problem-grid">
+        <article class="dining-info-card">
+          <div class="vg-usecase-icon"><i class="fas fa-hourglass-half" aria-hidden="true"></i></div>
+          <h3>Before TeleBotz: guests wait to be heard</h3>
+          <p>A customer may call repeatedly for water, a menu clarification, or the bill. If the waiter is occupied elsewhere, the request may go unanswered and the guest becomes frustrated.</p>
+        </article>
+        <article class="dining-info-card">
+          <div class="vg-usecase-icon"><i class="fas fa-people-arrows-left-right" aria-hidden="true"></i></div>
+          <h3>Staff juggle competing requests</h3>
+          <p>Several tables may need attention at the same time. The waiter has to move between tables, remember requests, answer questions, and coordinate service.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="vg-section home-solutions" id="choose-waiter">
+      <div class="vg-section-kicker">Choose your personalised waiter</div>
+      <h2>Three ways to bring a helpful presence to every table.</h2>
+      <p class="vg-section-lead">Each table can be connected to the type of assistance that best suits the restaurant, the customer, and the time of day.</p>
+      <div class="dining-types-grid">
+        <article class="dining-type-card featured">
+          <div class="vg-usecase-icon"><i class="fas fa-headset" aria-hidden="true"></i></div>
+          <span class="dining-type-label">Type 1 · Human waiter</span>
+          <h3>A real person, available remotely</h3>
+          <p>Connect the customer to a remote staff member who can listen, respond, clarify requests, and provide a personal touch.</p>
+          <ul>
+            <li>Live video conversation when needed.</li>
+            <li>Voice notes for convenient, asynchronous requests.</li>
+            <li>Text messages for quiet or specific instructions.</li>
+            <li>Customer receives an acknowledgement so they know the request was received.</li>
+          </ul>
+        </article>
+        <article class="dining-type-card">
+          <div class="vg-usecase-icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+          <span class="dining-type-label">Type 2 · AI waiter</span>
+          <h3>An always-available dining assistant</h3>
+          <p>An AI assistant can respond to routine questions and guide customers through common dining requests.</p>
+          <ul>
+            <li>Always available for common questions.</li>
+            <li>Voice-based conversation or text chat.</li>
+            <li>Can explain menu items, ingredients, spice levels, and prices when configured with restaurant information.</li>
+            <li>Can acknowledge requests and hand off questions it cannot answer to a human team member.</li>
+          </ul>
+        </article>
+        <article class="dining-type-card">
+          <div class="vg-usecase-icon"><i class="fas fa-universal-access" aria-hidden="true"></i></div>
+          <span class="dining-type-label">Type 3 · Inclusive remote work</span>
+          <h3>Remote waiter or host with a disability</h3>
+          <p>Offer an opportunity for people with disabilities to work remotely as customer-facing dining hosts, using the communication mode that works for them.</p>
+          <ul>
+            <li>Engage guests through video, voice notes, or text, based on the person's abilities and preferences.</li>
+            <li>Provide a meaningful customer-service role without requiring the person to move around the restaurant floor.</li>
+            <li>Coordinate with on-site staff for physical tasks such as carrying food, water, or bills.</li>
+            <li>Give guests a personal response while supporting more inclusive employment.</li>
+          </ul>
+        </article>
+      </div>
+      <p class="dining-note">The remote waiter handles conversation and customer acknowledgement. On-site restaurant staff remain responsible for preparing, checking, and physically delivering food and other items. The exact features depend on the restaurant's app configuration and operating process.</p>
+    </section>
+
+    <section class="vg-section">
+      <div class="vg-section-kicker">How the table experience works</div>
+      <h2 class="dining-section-title">A request reaches the right person without repeated calling.</h2>
+      <div class="dining-flow">
+        <article class="dining-flow-step"><div class="vg-usecase-icon"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i></div><strong>1. Customer connects</strong><p>The guest uses the table's TeleBotz connection to reach the selected waiter.</p></article>
+        <article class="dining-flow-step"><div class="vg-usecase-icon"><i class="fas fa-microphone" aria-hidden="true"></i></div><strong>2. Customer sends a request</strong><p>They can speak, leave a voice note, or type a message, depending on the selected service.</p></article>
+        <article class="dining-flow-step"><div class="vg-usecase-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></div><strong>3. Waiter acknowledges</strong><p>The remote human or AI assistant confirms that the request has been received.</p></article>
+        <article class="dining-flow-step"><div class="vg-usecase-icon"><i class="fas fa-concierge-bell" aria-hidden="true"></i></div><strong>4. On-site staff deliver</strong><p>The restaurant team fulfils the physical request, such as bringing water or serving food.</p></article>
+      </div>
+    </section>
+
+    <section class="vg-section home-usecase-worries">
+      <div class="vg-section-kicker">A better division of work</div>
+      <h2 class="dining-section-title">Remote conversation. On-site hospitality.</h2>
+      <div class="dining-problem-grid">
+        <article class="dining-info-card">
+          <h3><i class="fas fa-comments" aria-hidden="true"></i> The remote waiter focuses on</h3>
+          <p>Greeting guests, answering questions, receiving requests, confirming details, and keeping customers informed.</p>
+        </article>
+        <article class="dining-info-card">
+          <h3><i class="fas fa-utensils" aria-hidden="true"></i> The on-site team focuses on</h3>
+          <p>Preparing, checking, and delivering food and drinks, and handling other tasks that require a physical presence.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="vg-pilot home-usecase-cta">
+      <div class="vg-pilot-content">
+        <div class="vg-section-kicker">Explore a hotel dining pilot</div>
+        <h2>Give every table a waiter who responds.</h2>
+        <p>Explore a TeleBotz dining-table pilot with human, AI, or inclusive remote-host options for your restaurant.</p>
+        <a class="vg-button vg-button-primary" href="mailto:telebotz.in@gmail.com?subject=TeleBotz%20Hotel%20Dining%20Pilot">Discuss this use case <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="vg-footer">
+    <a class="vg-footer-brand" href="index.html"><img src="telebotz_logo_transparent.png" alt=""> <span>TeleBotz</span></a>
+    <p>Presence Redefined. Smartphone-powered telepresence.</p>
+    <small>© <span id="year"></span> TeleBotz. All rights reserved.</small>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('mobileMenuToggle');
+    const nav = document.getElementById('mainNav');
+    if (menuButton && nav) {
+      menuButton.addEventListener('click', () => {
+        const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+        menuButton.setAttribute('aria-expanded', String(!expanded));
+        menuButton.classList.toggle('active', !expanded);
+        nav.classList.toggle('active', !expanded);
+      });
+      nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        menuButton.classList.remove('active');
+        menuButton.setAttribute('aria-expanded', 'false');
+      }));
+    }
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
