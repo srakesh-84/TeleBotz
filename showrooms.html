@@ -3,78 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TeleBotz | Showrooms & Offices</title>
-  <meta name="description" content="TeleBotz helps showrooms and offices let visitors connect with real staff before arriving or walking in.">
+  <title>TeleBotz in Showrooms | MixedLine Shopping</title>
+  <meta name="description" content="MixedLine Shopping with TeleBotz brings online flexibility together with personalised offline showroom service. Explore collections virtually and connect with real showroom staff.">
   <meta name="theme-color" content="#071b2c">
   <link rel="icon" type="image/png" href="telebotz_favicon.png">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="gateway.css">
+  <style>
+    .showroom-hero{text-align:center;padding-top:4.5rem;padding-bottom:2rem}
+    .showroom-hero h1{margin:.9rem 0 1rem;color:var(--vg-ink);font-size:clamp(2.7rem,5vw,4.2rem);line-height:1.08;letter-spacing:-.05em;background:none;-webkit-text-fill-color:currentColor}
+    .showroom-hero h1 span{color:#119eaa}
+    .showroom-tagline{max-width:850px;margin:0 auto 1.4rem;color:var(--vg-muted);font-size:1.2rem;line-height:1.7}
+    .showroom-visual{margin:0 auto;max-width:1100px}
+    .showroom-visual img{display:block;width:100%;height:auto;border-radius:24px;border:1px solid var(--vg-line);box-shadow:0 24px 60px rgba(16,40,59,.12)}
+    .showroom-visual figcaption{margin-top:1rem;color:var(--vg-muted);font-size:.92rem;text-align:center}
+    .showroom-section-title{text-align:center}
+    .showroom-grid,.showroom-flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem;margin-top:2.5rem}
+    .showroom-card,.showroom-step{padding:1.6rem;background:#fff;border:1px solid var(--vg-line);border-radius:20px;box-shadow:0 10px 28px rgba(16,40,59,.035)}
+    .showroom-card h3,.showroom-step strong{display:block;margin:.2rem 0 .65rem;color:var(--vg-ink);font-size:1.15rem}
+    .showroom-card p,.showroom-step p{margin:0;color:var(--vg-muted);line-height:1.75}
+    .showroom-flow{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .showroom-step .vg-usecase-icon{margin-bottom:.8rem}
+    .showroom-note{max-width:900px;margin:1.6rem auto 0;color:#718493;font-size:.9rem;line-height:1.7;text-align:center}
+    @media(max-width:760px){.showroom-grid{grid-template-columns:1fr}.showroom-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.showroom-hero{padding-top:3rem}}
+    @media(max-width:480px){.showroom-flow{grid-template-columns:1fr}.showroom-visual img{border-radius:16px}}
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="header-container">
-      <a class="brand" href="index.html" aria-label="TeleBotz home">
-        <img src="telebotz_logo_transparent.png" alt="TeleBotz logo" class="logo">
-        <span class="brand-tagline">Presence Redefined</span>
-      </a>
-      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
-        <ul>
-          <li><a class="nav-link" href="index.html#how-it-works">How it works</a></li>
-          <li><a class="nav-link" href="index.html#features">Features</a></li>
-          <li><a class="nav-link" href="use-cases.html">Use cases</a></li>
-          <li><a class="nav-link cta-nav" href="index.html#pilot">Discuss a pilot</a></li>
-        </ul>
-      </nav>
+      <a class="brand" href="index.html" aria-label="TeleBotz home"><img src="telebotz_logo_transparent.png" alt="TeleBotz logo" class="logo"><span class="brand-tagline">Presence Redefined</span></a>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav" id="mobileMenuToggle"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation"><ul>
+        <li><a class="nav-link" href="index.html#how-it-works">How it works</a></li>
+        <li><a class="nav-link" href="index.html#features">Features</a></li>
+        <li><a class="nav-link" href="use-cases.html">Use cases</a></li>
+        <li><a class="nav-link cta-nav" href="index.html#pilot">Discuss a pilot</a></li>
+      </ul></nav>
     </div>
   </header>
-
-  <main>
-    <section class="vg-page-hero vg-section">
-      <div class="vg-section-kicker">Use case</div>
-      <h1>Showrooms & offices</h1>
-      <p class="vg-section-lead">Let people say hello, ask questions, and get connected to the right person before they arrive.</p>
+  <main class="home-usecase-page">
+    <section class="vg-section showroom-hero">
+      <div class="vg-section-kicker">A new way to explore showrooms</div>
+      <h1>TeleBotz in <span>Showrooms</span></h1>
+      <p class="showroom-tagline"><strong>MixedLine Shopping</strong><br>Enjoy Online Flexibility. Experience Offline Personalised Service.</p>
+      <a class="vg-button vg-button-primary" href="#how-it-works">See how it works <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
     </section>
-
-    <section class="vg-section">
-      <div class="vg-usecase-detail">
-        <article class="vg-side-card">
-          <div class="vg-side-icon"><i class="fas fa-store"></i></div>
-          <div>
-            <h3>Why it works</h3>
-            <p>Customers and prospects often need a quick, trusted way to reach the right team. TeleBotz provides a modern welcome point that helps staff continue to serve people already in the space while remaining accessible to remote visitors.</p>
-          </div>
-        </article>
-
-        <article class="vg-side-card">
-          <div class="vg-side-icon"><i class="fas fa-handshake"></i></div>
-          <div>
-            <h3>Typical scenarios</h3>
-            <p>Product enquiries, appointment scheduling, sales conversations, office access, and visitor guidance can all start from a virtual entrance.</p>
-          </div>
-        </article>
+    <section class="vg-section home-usecase-visual-section">
+      <figure class="showroom-visual">
+        <img src="telebotz-showroom.png" alt="Before and after comparison showing the challenges of visiting multiple clothing shops and a customer exploring a showroom virtually through TeleBotz while interacting with showroom staff.">
+        <figcaption>Explore a showroom remotely, connect with its people, and discover collections without making an initial in-person visit.</figcaption>
+      </figure>
+    </section>
+    <section class="vg-section home-usecase-worries">
+      <div class="vg-section-kicker">The showroom shopping challenge</div>
+      <h2 class="showroom-section-title">Finding the right product should not mean visiting every shop.</h2>
+      <p class="vg-section-lead">Customers often move between showrooms to find a particular style, matching item, size, or price. They may not know which stores have the latest collections, current discounts, or the item they are looking for.</p>
+      <div class="showroom-grid">
+        <article class="showroom-card"><div class="vg-usecase-icon"><i class="fas fa-person-walking" aria-hidden="true"></i></div><h3>Repeated store visits</h3><p>Customers may have to step into and out of several shops just to compare options or find matching tops, pants, and accessories.</p></article>
+        <article class="showroom-card"><div class="vg-usecase-icon"><i class="fas fa-tags" aria-hidden="true"></i></div><h3>Limited awareness</h3><p>They may miss updated collections, available sizes, new arrivals, and discounts because this information is not always visible before visiting.</p></article>
+        <article class="showroom-card"><div class="vg-usecase-icon"><i class="fas fa-face-frown" aria-hidden="true"></i></div><h3>Disappointment when items are unavailable</h3><p>A visit can end without a purchase when the desired item, size, colour, or matching product is not available.</p></article>
+        <article class="showroom-card"><div class="vg-usecase-icon"><i class="fas fa-clock" aria-hidden="true"></i></div><h3>Time spent searching</h3><p>Travelling between stores and browsing without knowing what is available can make shopping unnecessarily time-consuming.</p></article>
       </div>
     </section>
-
-    <section class="vg-section vg-cta-panel">
-      <div class="vg-pilot-content">
-        <div class="vg-section-kicker">Explore a pilot</div>
-        <h2>Turn your showroom or office into a more accessible front door.</h2>
-        <p>We can help you design a queue-free, visitor-friendly first touchpoint for your team.</p>
-        <a class="vg-button vg-button-primary" href="mailto:telebotz.in@gmail.com?subject=TeleBotz%20Showroom%20Pilot">Discuss a pilot <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    <section class="vg-section home-solutions" id="how-it-works">
+      <div class="vg-section-kicker">The MixedLine Shopping experience</div>
+      <h2 class="showroom-section-title">Bring the showroom closer to the customer.</h2>
+      <p class="vg-section-lead">With TeleBotz, customers can present themselves virtually and look around a showroom from their own location. A real staff member at the showroom can interact with them, showcase products, and provide personalised assistance.</p>
+      <div class="showroom-flow">
+        <article class="showroom-step"><div class="vg-usecase-icon"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i></div><strong>1. Enter virtually</strong><p>The customer connects to the showroom through TeleBotz using a smartphone.</p></article>
+        <article class="showroom-step"><div class="vg-usecase-icon"><i class="fas fa-binoculars" aria-hidden="true"></i></div><strong>2. Explore the showroom</strong><p>The customer observes the showroom and gets a feel for its collections and displays.</p></article>
+        <article class="showroom-step"><div class="vg-usecase-icon"><i class="fas fa-user-tie" aria-hidden="true"></i></div><strong>3. Meet the showroom team</strong><p>A real staff member can greet the customer, answer questions, and showcase suitable products.</p></article>
+        <article class="showroom-step"><div class="vg-usecase-icon"><i class="fas fa-shirt" aria-hidden="true"></i></div><strong>4. Discover suitable items</strong><p>Customers can ask about matching products, sizes, availability, new arrivals, and current offers.</p></article>
+      </div>
+      <p class="showroom-note">TeleBotz supports product discovery and personalised interaction. After exploring, customers remain free to choose how they wish to proceed with their purchase.</p>
+    </section>
+    <section class="vg-section home-usecase-worries">
+      <div class="vg-section-kicker">Benefits for both sides</div>
+      <h2 class="showroom-section-title">A connected experience for shoppers and showrooms.</h2>
+      <div class="showroom-grid">
+        <article class="showroom-card"><h3><i class="fas fa-bag-shopping" aria-hidden="true"></i> For customers</h3><p>Explore before travelling, interact with real staff, discover matching products, check availability, and learn about collections and discounts.</p></article>
+        <article class="showroom-card"><h3><i class="fas fa-store" aria-hidden="true"></i> For showrooms</h3><p>Present products to remote customers, offer a more personal digital touchpoint, highlight new arrivals and promotions, and help interested shoppers discover the right items.</p></article>
       </div>
     </section>
+    <section class="vg-pilot home-usecase-cta"><div class="vg-pilot-content">
+      <div class="vg-section-kicker">Explore a showroom pilot</div><h2>Let customers experience your showroom from anywhere.</h2>
+      <p>Bring TeleBotz into your showroom and explore a more connected way to engage customers.</p>
+      <a class="vg-button vg-button-primary" href="mailto:telebotz.in@gmail.com?subject=TeleBotz%20Showroom%20Pilot">Discuss this use case <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div></section>
   </main>
-
-  <footer class="vg-footer">
-    <a class="vg-footer-brand" href="index.html"><img src="telebotz_logo_transparent.png" alt=""> <span>TeleBotz</span></a>
-    <p>Presence Redefined. A virtual gateway to real-world businesses.</p>
-    <small>© <span id="year"></span> TeleBotz. All rights reserved.</small>
-  </footer>
-
+  <footer class="vg-footer"><a class="vg-footer-brand" href="index.html"><img src="telebotz_logo_transparent.png" alt=""> <span>TeleBotz</span></a><p>Presence Redefined. Smartphone-powered telepresence.</p><small>© <span id="year"></span> TeleBotz. All rights reserved.</small></footer>
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuButton=document.getElementById('mobileMenuToggle');const nav=document.getElementById('mainNav');
+    if(menuButton&&nav){menuButton.addEventListener('click',()=>{const expanded=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!expanded));menuButton.classList.toggle('active',!expanded);nav.classList.toggle('active',!expanded)});nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('active');menuButton.classList.remove('active');menuButton.setAttribute('aria-expanded','false')}))}
+    const yearEl=document.getElementById('year');if(yearEl)yearEl.textContent=new Date().getFullYear();
   </script>
 </body>
 </html>
