@@ -16,7 +16,9 @@
     .multi-hero h1{margin:.8rem 0 1rem;color:var(--vg-ink);font-size:clamp(2.5rem,5vw,4.1rem);line-height:1.08;letter-spacing:-.045em;background:none;-webkit-text-fill-color:currentColor}
     .multi-hero h1 span{color:#119eaa}
     .multi-tagline{max-width:850px;margin:0 auto 1.5rem;color:var(--vg-muted);font-size:1.18rem;line-height:1.7}
-    .multi-visual{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;max-width:1100px;margin:0 auto}
+    .multi-illustration{max-width:1120px;margin:0 auto;padding:0;overflow:hidden;border:1px solid var(--vg-line);border-radius:22px;background:#fff;box-shadow:0 14px 38px rgba(16,40,59,.08)}
+    .multi-illustration img{display:block;width:100%;height:auto}
+    .multi-illustration figcaption{padding:.85rem 1.2rem;text-align:center;color:var(--vg-muted);font-size:.9rem}
     .multi-panel{padding:1.8rem;border:1px solid var(--vg-line);border-radius:22px;background:#fff;box-shadow:0 12px 32px rgba(16,40,59,.06);text-align:left}
     .multi-panel.after{background:linear-gradient(160deg,#f1fbff,#fff);border-color:#9bd8e7}
     .multi-panel h2{display:flex;align-items:center;gap:.65rem;margin:0 0 .8rem;font-size:1.45rem;color:var(--vg-ink)}
@@ -42,8 +44,8 @@
     .multi-step h3{margin:.7rem 0 .35rem;color:var(--vg-ink);font-size:1rem}
     .multi-step p{margin:0;color:var(--vg-muted);font-size:.9rem;line-height:1.65}
     .multi-note{max-width:900px;margin:1.5rem auto 0;text-align:center;color:var(--vg-muted);font-size:.88rem;line-height:1.7}
-    @media(max-width:760px){.multi-visual{grid-template-columns:1fr}.multi-benefits{grid-template-columns:1fr 1fr}.multi-steps{grid-template-columns:1fr 1fr}.multi-hero{padding-top:3rem}}
-    @media(max-width:480px){.multi-benefits,.multi-steps{grid-template-columns:1fr}.multi-panel{padding:1.25rem}}
+    @media(max-width:760px){.multi-benefits{grid-template-columns:1fr 1fr}.multi-steps{grid-template-columns:1fr 1fr}.multi-hero{padding-top:3rem}}
+    @media(max-width:480px){.multi-benefits,.multi-steps{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -73,31 +75,11 @@
       <a class="vg-button vg-button-primary" href="#how-it-works">See how it works <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
     </section>
 
-    <section class="vg-section">
-      <div class="multi-visual" aria-label="Before and after TeleBotz comparison">
-        <article class="multi-panel">
-          <h2><i class="fas fa-route" aria-hidden="true"></i> Before TeleBotz</h2>
-          <p><strong>Juggling between shops, especially during peak hours.</strong></p>
-          <p>When an owner manages multiple branches, being physically present at one shop means being away from the others. Customers and employees at another location may need to wait for the owner's attention.</p>
-          <div class="branch-list">
-            <div class="branch"><i class="fas fa-store" aria-hidden="true"></i><div><strong>Shop A</strong><small>Customers need assistance</small></div></div>
-            <div class="branch"><i class="fas fa-store" aria-hidden="true"></i><div><strong>Shop B</strong><small>Employees need a decision</small></div></div>
-            <div class="branch"><i class="fas fa-store" aria-hidden="true"></i><div><strong>Shop C</strong><small>Busy period at the counter</small></div></div>
-          </div>
-          <p><em>“I have three shops. How do I attend to everyone?”</em></p>
-        </article>
-        <article class="multi-panel after">
-          <h2><i class="fas fa-video" aria-hidden="true"></i> After TeleBotz</h2>
-          <p><strong>Connect across multiple shops in a single conference call.</strong></p>
-          <p>The owner can use TeleBotz to connect to devices at different branches, bringing the locations into one multi-shop conversation.</p>
-          <div class="owner-call"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i><strong>Multi-Shop Conference</strong><span>Owner + Shop A + Shop B + Shop C</span></div>
-          <div class="branch-list">
-            <div class="branch"><i class="fas fa-circle-check" aria-hidden="true"></i><div><strong>Shop A · Connected</strong><small>Speak with customers and staff</small></div></div>
-            <div class="branch"><i class="fas fa-circle-check" aria-hidden="true"></i><div><strong>Shop B · Connected</strong><small>Guide employees remotely</small></div></div>
-            <div class="branch"><i class="fas fa-circle-check" aria-hidden="true"></i><div><strong>Shop C · Connected</strong><small>Respond during busy periods</small></div></div>
-          </div>
-        </article>
-      </div>
+    <section class="vg-section" aria-label="Before and after TeleBotz illustration">
+      <figure class="multi-illustration">
+        <img src="telebotz_multiple_shop.png" alt="Before and after TeleBotz: a multi-shop owner struggles to move between branches before TeleBotz, then connects with customers and employees across several shops through one conference call." loading="eager" fetchpriority="high">
+        <figcaption>Before and after TeleBotz: one owner connecting with multiple shop locations.</figcaption>
+      </figure>
     </section>
 
     <section class="vg-section home-usecase-worries">
