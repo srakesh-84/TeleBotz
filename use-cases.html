@@ -12,12 +12,20 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="gateway.css">
   <style>
-    /* Keep the use-case heading visually close to the cards below it. */
-    .use-cases-page .vg-page-hero { padding-bottom: 1.5rem; }
-    .use-cases-page .vg-page-hero + .vg-section { padding-top: 1.5rem; }
+    /* Compact vertical spacing around the use-case title and card grid. */
+    .use-cases-page > .vg-page-hero.vg-section {
+      padding: 2rem 1.5rem 1rem;
+    }
+    .use-cases-page > .vg-section:not(.vg-page-hero) {
+      padding: 1rem 1.5rem 2rem;
+    }
     @media (max-width: 768px) {
-      .use-cases-page .vg-page-hero { padding-bottom: 1rem; }
-      .use-cases-page .vg-page-hero + .vg-section { padding-top: 1rem; }
+      .use-cases-page > .vg-page-hero.vg-section {
+        padding: 1.5rem 1.2rem .75rem;
+      }
+      .use-cases-page > .vg-section:not(.vg-page-hero) {
+        padding: .75rem 1.2rem 1.5rem;
+      }
     }
   </style>
 </head>
