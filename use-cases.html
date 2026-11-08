@@ -11,6 +11,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="gateway.css">
+  <style>
+    /* Keep the use-case heading visually close to the cards below it. */
+    .use-cases-page .vg-page-hero { padding-bottom: 1.5rem; }
+    .use-cases-page .vg-page-hero + .vg-section { padding-top: 1.5rem; }
+    @media (max-width: 768px) {
+      .use-cases-page .vg-page-hero { padding-bottom: 1rem; }
+      .use-cases-page .vg-page-hero + .vg-section { padding-top: 1rem; }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -33,7 +42,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="use-cases-page">
     <section class="vg-page-hero vg-section">
       <div class="vg-section-kicker">Use cases</div>
       <h1>TeleBotz Use Cases</h1>
