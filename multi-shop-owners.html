@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleBotz for Multi-Shop Owners | One Owner, Multiple Shops</title>
+  <meta name="description" content="Stay connected across multiple shop branches. TeleBotz helps owners connect with customers and employees at different locations through a multi-shop conference call.">
+  <meta name="theme-color" content="#071b2c">
+  <link rel="icon" type="image/png" href="telebotz_favicon.png">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gateway.css">
+  <style>
+    .multi-hero{text-align:center;padding:4.5rem 1.2rem 2.2rem}
+    .multi-hero h1{margin:.8rem 0 1rem;color:var(--vg-ink);font-size:clamp(2.5rem,5vw,4.1rem);line-height:1.08;letter-spacing:-.045em;background:none;-webkit-text-fill-color:currentColor}
+    .multi-hero h1 span{color:#119eaa}
+    .multi-tagline{max-width:850px;margin:0 auto 1.5rem;color:var(--vg-muted);font-size:1.18rem;line-height:1.7}
+    .multi-visual{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;max-width:1100px;margin:0 auto}
+    .multi-panel{padding:1.8rem;border:1px solid var(--vg-line);border-radius:22px;background:#fff;box-shadow:0 12px 32px rgba(16,40,59,.06);text-align:left}
+    .multi-panel.after{background:linear-gradient(160deg,#f1fbff,#fff);border-color:#9bd8e7}
+    .multi-panel h2{display:flex;align-items:center;gap:.65rem;margin:0 0 .8rem;font-size:1.45rem;color:var(--vg-ink)}
+    .multi-panel h2 i{color:#149eaa}
+    .multi-panel p{color:var(--vg-muted);line-height:1.75}
+    .branch-list{display:grid;gap:.7rem;margin:1.2rem 0}
+    .branch{display:flex;align-items:center;gap:.8rem;padding:.8rem 1rem;border:1px solid var(--vg-line);border-radius:13px;background:#fff}
+    .branch i{color:#138ca8;font-size:1.2rem}
+    .branch strong{display:block;color:var(--vg-ink)}
+    .branch small{color:var(--vg-muted)}
+    .owner-call{padding:1rem;border-radius:15px;background:#082b53;color:#fff;text-align:center}
+    .owner-call i{font-size:1.5rem;color:#70d9e6}
+    .owner-call strong{display:block;margin:.35rem 0}
+    .owner-call span{font-size:.88rem;color:#d7e9f8}
+    .multi-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:2rem}
+    .multi-benefit{padding:1.4rem;border:1px solid var(--vg-line);border-radius:18px;background:#fff}
+    .multi-benefit i{font-size:1.35rem;color:#119eaa}
+    .multi-benefit h3{margin:.7rem 0 .4rem;color:var(--vg-ink);font-size:1.05rem}
+    .multi-benefit p{margin:0;color:var(--vg-muted);line-height:1.65;font-size:.94rem}
+    .multi-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-top:2rem}
+    .multi-step{padding:1.3rem;border:1px solid var(--vg-line);border-radius:17px;background:#fff}
+    .multi-step .num{display:inline-grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:#e5f7fa;color:#087f91;font-weight:800}
+    .multi-step h3{margin:.7rem 0 .35rem;color:var(--vg-ink);font-size:1rem}
+    .multi-step p{margin:0;color:var(--vg-muted);font-size:.9rem;line-height:1.65}
+    .multi-note{max-width:900px;margin:1.5rem auto 0;text-align:center;color:var(--vg-muted);font-size:.88rem;line-height:1.7}
+    @media(max-width:760px){.multi-visual{grid-template-columns:1fr}.multi-benefits{grid-template-columns:1fr 1fr}.multi-steps{grid-template-columns:1fr 1fr}.multi-hero{padding-top:3rem}}
+    @media(max-width:480px){.multi-benefits,.multi-steps{grid-template-columns:1fr}.multi-panel{padding:1.25rem}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a class="brand" href="index.html" aria-label="TeleBotz home">
+        <img src="telebotz_logo_transparent.png" alt="TeleBotz logo" class="logo">
+        <span class="brand-tagline">Presence Redefined</span>
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav" id="mobileMenuToggle"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <ul>
+          <li><a class="nav-link" href="index.html#how-it-works">How it works</a></li>
+          <li><a class="nav-link" href="index.html#features">Features</a></li>
+          <li><a class="nav-link" href="use-cases.html">Use cases</a></li>
+          <li><a class="nav-link cta-nav" href="index.html#pilot">Discuss a pilot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="home-usecase-page">
+    <section class="vg-section multi-hero">
+      <div class="vg-section-kicker">TeleBotz for multi-shop owners</div>
+      <h1>One Owner. Multiple Shops.<br><span>One Connected Presence.</span></h1>
+      <p class="multi-tagline"><strong>Be a responsible owner. Be present across multiple shops, all at once.</strong><br>Connect with customers and employees across your branches without constantly travelling from one shop to another.</p>
+      <a class="vg-button vg-button-primary" href="#how-it-works">See how it works <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </section>
+
+    <section class="vg-section">
+      <div class="multi-visual" aria-label="Before and after TeleBotz comparison">
+        <article class="multi-panel">
+          <h2><i class="fas fa-route" aria-hidden="true"></i> Before TeleBotz</h2>
+          <p><strong>Juggling between shops, especially during peak hours.</strong></p>
+          <p>When an owner manages multiple branches, being physically present at one shop means being away from the others. Customers and employees at another location may need to wait for the owner's attention.</p>
+          <div class="branch-list">
+            <div class="branch"><i class="fas fa-store" aria-hidden="true"></i><div><strong>Shop A</strong><small>Customers need assistance</small></div></div>
+            <div class="branch"><i class="fas fa-store" aria-hidden="true"></i><div><strong>Shop B</strong><small>Employees need a decision</small></div></div>
+            <div class="branch"><i class="fas fa-store" aria-hidden="true"></i><div><strong>Shop C</strong><small>Busy period at the counter</small></div></div>
+          </div>
+          <p><em>“I have three shops. How do I attend to everyone?”</em></p>
+        </article>
+        <article class="multi-panel after">
+          <h2><i class="fas fa-video" aria-hidden="true"></i> After TeleBotz</h2>
+          <p><strong>Connect across multiple shops in a single conference call.</strong></p>
+          <p>The owner can use TeleBotz to connect to devices at different branches, bringing the locations into one multi-shop conversation.</p>
+          <div class="owner-call"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i><strong>Multi-Shop Conference</strong><span>Owner + Shop A + Shop B + Shop C</span></div>
+          <div class="branch-list">
+            <div class="branch"><i class="fas fa-circle-check" aria-hidden="true"></i><div><strong>Shop A · Connected</strong><small>Speak with customers and staff</small></div></div>
+            <div class="branch"><i class="fas fa-circle-check" aria-hidden="true"></i><div><strong>Shop B · Connected</strong><small>Guide employees remotely</small></div></div>
+            <div class="branch"><i class="fas fa-circle-check" aria-hidden="true"></i><div><strong>Shop C · Connected</strong><small>Respond during busy periods</small></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="vg-section home-usecase-worries">
+      <div class="vg-section-kicker">The multi-branch challenge</div>
+      <h2>One owner cannot be physically everywhere.</h2>
+      <p class="vg-section-lead">Travelling between branches takes time. During peak hours, different shops may need guidance at the same moment. TeleBotz explores a way to make the owner more accessible across locations.</p>
+      <div class="multi-benefits">
+        <article class="multi-benefit"><i class="fas fa-shop" aria-hidden="true"></i><h3>Be present across branches</h3><p>Connect with multiple shop locations without travelling between them for every interaction.</p></article>
+        <article class="multi-benefit"><i class="fas fa-comments" aria-hidden="true"></i><h3>Interact with customers</h3><p>Personally respond to customer questions and provide assistance from another location.</p></article>
+        <article class="multi-benefit"><i class="fas fa-people-group" aria-hidden="true"></i><h3>Support your employees</h3><p>Communicate with staff, clarify doubts, and provide guidance when decisions are needed.</p></article>
+        <article class="multi-benefit"><i class="fas fa-clock" aria-hidden="true"></i><h3>Handle peak hours</h3><p>Reach branches when they need attention, even when several locations are busy.</p></article>
+        <article class="multi-benefit"><i class="fas fa-network-wired" aria-hidden="true"></i><h3>Stay connected</h3><p>Maintain a closer connection with daily operations across your shops.</p></article>
+        <article class="multi-benefit"><i class="fas fa-user-check" aria-hidden="true"></i><h3>Be a responsive owner</h3><p>Make it easier for customers and employees to reach you when your presence matters.</p></article>
+      </div>
+    </section>
+
+    <section class="vg-section" id="how-it-works">
+      <div class="vg-section-kicker">How it works</div>
+      <h2>One conference call. Multiple shop locations.</h2>
+      <div class="multi-steps">
+        <article class="multi-step"><span class="num">1</span><h3>Set up each branch</h3><p>Place a smartphone running the TeleBotz Robot App at each participating shop.</p></article>
+        <article class="multi-step"><span class="num">2</span><h3>Owner connects</h3><p>Use the TeleBotz User App to initiate a connection to the required shop locations.</p></article>
+        <article class="multi-step"><span class="num">3</span><h3>Bring branches together</h3><p>Connect participating locations in a multi-shop conference and communicate with people there.</p></article>
+        <article class="multi-step"><span class="num">4</span><h3>Guide and respond</h3><p>Interact with customers and employees while the on-site teams continue their physical work.</p></article>
+      </div>
+      <p class="multi-note">The experience depends on the supported multi-party calling configuration, network connectivity, and devices deployed at each branch. TeleBotz is intended to complement on-site teams, not replace the people who serve customers in person.</p>
+    </section>
+
+    <section class="vg-pilot home-usecase-cta">
+      <div class="vg-pilot-content">
+        <div class="vg-section-kicker">Explore a multi-shop pilot</div>
+        <h2>Your business has multiple locations. Your presence can too.</h2>
+        <p>Let's explore how TeleBotz could support customer and employee interactions across your shop branches.</p>
+        <a class="vg-button vg-button-primary" href="mailto:telebotz.in@gmail.com?subject=TeleBotz%20Multi-Shop%20Owners%20Pilot">Discuss this use case <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="vg-footer">
+    <a class="vg-footer-brand" href="index.html"><img src="telebotz_logo_transparent.png" alt=""> <span>TeleBotz</span></a>
+    <p>Presence Redefined. Smartphone-powered telepresence.</p>
+    <small>© <span id="year"></span> TeleBotz. All rights reserved.</small>
+  </footer>
+  <script>
+    const menuButton=document.getElementById('mobileMenuToggle');
+    const nav=document.getElementById('mainNav');
+    if(menuButton&&nav){menuButton.addEventListener('click',()=>{const expanded=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!expanded));menuButton.classList.toggle('active',!expanded);nav.classList.toggle('active',!expanded)});nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('active');menuButton.classList.remove('active');menuButton.setAttribute('aria-expanded','false')}))}
+    const yearEl=document.getElementById('year');if(yearEl)yearEl.textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
