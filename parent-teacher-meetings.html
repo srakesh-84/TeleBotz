@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleBotz for Parent-Teacher Meetings | Flexible, Convenient PTMs</title>
+  <meta name="description" content="Make parent-teacher meetings more flexible with TeleBotz virtual queues, callbacks, and hybrid in-person and virtual participation.">
+  <meta name="theme-color" content="#071b2c">
+  <link rel="icon" type="image/png" href="telebotz_favicon.png">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gateway.css">
+  <style>
+    .ptm-hero{text-align:center;padding:4.5rem 1.2rem 2.2rem}
+    .ptm-hero h1{margin:.8rem 0 1rem;color:var(--vg-ink);font-size:clamp(2.5rem,5vw,4.1rem);line-height:1.08;letter-spacing:-.045em;background:none;-webkit-text-fill-color:currentColor}
+    .ptm-hero h1 span{color:#119eaa}
+    .ptm-tagline{max-width:900px;margin:0 auto 1.5rem;color:var(--vg-muted);font-size:1.18rem;line-height:1.7}
+    .ptm-visual{max-width:1200px;margin:0 auto;padding:0;overflow:hidden;border:1px solid var(--vg-line);border-radius:22px;background:#fff;box-shadow:0 14px 38px rgba(16,40,59,.08)}
+    .ptm-visual img{display:block;width:100%;height:auto}
+    .ptm-visual figcaption{padding:.85rem 1.2rem;text-align:center;color:var(--vg-muted);font-size:.9rem}
+    .ptm-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem;margin-top:2rem}
+    .ptm-card{padding:1.6rem;background:#fff;border:1px solid var(--vg-line);border-radius:20px;box-shadow:0 10px 28px rgba(16,40,59,.035)}
+    .ptm-card h3{margin:.2rem 0 .65rem;color:var(--vg-ink);font-size:1.15rem}
+    .ptm-card p{margin:0;color:var(--vg-muted);line-height:1.75}
+    .ptm-card .vg-usecase-icon{margin-bottom:1rem}
+    .ptm-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-top:2.2rem}
+    .ptm-step{padding:1.35rem;border-radius:18px;background:#fff;border:1px solid var(--vg-line)}
+    .ptm-step .num{display:inline-grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:#e5f7fa;color:#087f91;font-weight:800}
+    .ptm-step h3{margin:.7rem 0 .35rem;color:var(--vg-ink);font-size:1rem}
+    .ptm-step p{margin:0;color:var(--vg-muted);font-size:.9rem;line-height:1.65}
+    .ptm-note{max-width:920px;margin:1.5rem auto 0;text-align:center;color:var(--vg-muted);font-size:.88rem;line-height:1.7}
+    @media(max-width:760px){.ptm-grid{grid-template-columns:1fr}.ptm-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.ptm-hero{padding-top:3rem}}
+    @media(max-width:480px){.ptm-flow{grid-template-columns:1fr}.ptm-visual{border-radius:16px}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a class="brand" href="index.html" aria-label="TeleBotz home">
+        <img src="telebotz_logo_transparent.png" alt="TeleBotz logo" class="logo">
+        <span class="brand-tagline">Presence Redefined</span>
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav" id="mobileMenuToggle"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <ul>
+          <li><a class="nav-link" href="index.html#how-it-works">How it works</a></li>
+          <li><a class="nav-link" href="index.html#features">Features</a></li>
+          <li><a class="nav-link" href="use-cases.html">Use cases</a></li>
+          <li><a class="nav-link cta-nav" href="index.html#pilot">Discuss a pilot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="home-usecase-page">
+    <section class="vg-section ptm-hero">
+      <div class="vg-section-kicker">A more flexible parent-teacher meeting</div>
+      <h1>TeleBotz for <span>Parent-Teacher Meetings</span></h1>
+      <p class="ptm-tagline"><strong>Enabling responsible parenting without compromising work responsibilities.</strong><br>Give parents another way to connect with teachers through virtual queues, callbacks, and flexible in-person or virtual participation.</p>
+      <a class="vg-button vg-button-primary" href="#how-it-works">See how it works <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </section>
+
+    <section class="vg-section" aria-label="Before and after TeleBotz for parent-teacher meetings">
+      <figure class="ptm-visual">
+        <img src="telebotz_ptm.png" alt="Before and after comparison of parent-teacher meetings: parents waiting in a crowded school queue, a parent speaking with a teacher through a smartphone, and a teacher using a TeleBotz device to communicate with a parent." loading="eager" fetchpriority="high">
+        <figcaption>More ways for parents and teachers to connect, without every interaction requiring a physical visit.</figcaption>
+      </figure>
+    </section>
+
+    <section class="vg-section home-usecase-worries">
+      <div class="vg-section-kicker">The PTM challenge</div>
+      <h2>Important conversations should not create unnecessary pressure.</h2>
+      <p class="vg-section-lead">Parent-teacher meetings are often scheduled on working days and within a limited time window. Parents may need to travel and wait, while teachers must balance a steady stream of conversations with the time available for each family.</p>
+      <div class="ptm-grid">
+        <article class="ptm-card">
+          <div class="vg-usecase-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
+          <h3>Parents lose time travelling and waiting</h3>
+          <p>Parents may need to take time away from work, reach school, and wait until their turn comes during a busy meeting schedule.</p>
+        </article>
+        <article class="ptm-card">
+          <div class="vg-usecase-icon"><i class="fas fa-people-group" aria-hidden="true"></i></div>
+          <h3>Long queues put pressure on everyone</h3>
+          <p>As the crowd grows, waiting parents can become impatient and teachers may feel pressured to shorten conversations.</p>
+        </article>
+        <article class="ptm-card">
+          <div class="vg-usecase-icon"><i class="fas fa-user-clock" aria-hidden="true"></i></div>
+          <h3>Working parents face scheduling conflicts</h3>
+          <p>It may be difficult for both parents to attend in person on a working day. Often, only one parent can make the visit.</p>
+        </article>
+        <article class="ptm-card">
+          <div class="vg-usecase-icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
+          <h3>Teachers need room to manage both channels</h3>
+          <p>Teachers may need to alternate between parents waiting virtually and those who have come to school in person.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="vg-section">
+      <div class="vg-section-kicker">A flexible PTM experience</div>
+      <h2>Keep the conversation. Make attendance more convenient.</h2>
+      <p class="vg-section-lead">TeleBotz adds a virtual channel alongside the usual in-person meeting. Parents can join a queue remotely, receive a callback when their turn arrives, and participate in a way that better fits their circumstances.</p>
+      <div class="ptm-grid">
+        <article class="ptm-card">
+          <div class="vg-usecase-icon"><i class="fas fa-list-ol" aria-hidden="true"></i></div>
+          <h3>Virtual queue with callbacks</h3>
+          <p>Parents join the queue through TeleBotz and receive a call when the previous meeting finishes and their turn is ready.</p>
+        </article>
+        <article class="ptm-card">
+          <div class="vg-usecase-icon"><i class="fas fa-user-group" aria-hidden="true"></i></div>
+          <h3>Hybrid parent participation</h3>
+          <p>One parent can attend at school while the other joins the conversation virtually through TeleBotz.</p>
+        </article>
+        <article class="ptm-card">
+          <div class="vg-usecase-icon"><i class="fas fa-pause-circle" aria-hidden="true"></i></div>
+          <h3>Teacher-controlled pause and resume</h3>
+          <p>When a parent is physically present, the teacher can put the virtual TeleBotz session on hold, attend in person, and resume virtual meetings when ready.</p>
+        </article>
+        <article class="ptm-card">
+          <div class="vg-usecase-icon"><i class="fas fa-house-laptop" aria-hidden="true"></i></div>
+          <h3>Attend without an unnecessary visit</h3>
+          <p>Parents can take part remotely when appropriate, reducing avoidable travel, time away from work, and physical waiting.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="vg-section" id="how-it-works">
+      <div class="vg-section-kicker">How it works</div>
+      <h2>From virtual queue to a personal conversation.</h2>
+      <div class="ptm-flow">
+        <article class="ptm-step"><span class="num">1</span><h3>Parent joins the queue</h3><p>The parent uses TeleBotz to enter the virtual queue for the teacher's PTM session.</p></article>
+        <article class="ptm-step"><span class="num">2</span><h3>TeleBotz calls when ready</h3><p>When the previous conversation ends and the teacher is available, the next parent receives a callback.</p></article>
+        <article class="ptm-step"><span class="num">3</span><h3>Teacher manages both channels</h3><p>The teacher can pause virtual calls to attend a parent who is physically present, then resume the virtual queue.</p></article>
+        <article class="ptm-step"><span class="num">4</span><h3>Parent speaks with the teacher</h3><p>The parent joins the conversation remotely, or participates virtually while another parent is present at school.</p></article>
+      </div>
+      <p class="ptm-note">The callback and queue experience depends on the TeleBotz deployment, teacher availability, network connectivity, and the school's meeting process. TeleBotz is intended to complement in-person PTMs and give schools another channel for parent participation.</p>
+    </section>
+
+    <section class="vg-pilot home-usecase-cta">
+      <div class="vg-pilot-content">
+        <div class="vg-section-kicker">Explore a school PTM pilot</div>
+        <h2>Make parent-teacher meetings more accessible.</h2>
+        <p>Let's explore how a virtual queue and callback-based PTM workflow could fit your school's meeting schedule.</p>
+        <a class="vg-button vg-button-primary" href="mailto:telebotz.in@gmail.com?subject=TeleBotz%20Parent-Teacher%20Meeting%20Pilot">Discuss this use case <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="vg-footer">
+    <a class="vg-footer-brand" href="index.html"><img src="telebotz_logo_transparent.png" alt=""> <span>TeleBotz</span></a>
+    <p>Presence Redefined. Smartphone-powered telepresence.</p>
+    <small>© <span id="year"></span> TeleBotz. All rights reserved.</small>
+  </footer>
+  <script>
+    const menuButton=document.getElementById('mobileMenuToggle');
+    const nav=document.getElementById('mainNav');
+    if(menuButton&&nav){menuButton.addEventListener('click',()=>{const expanded=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!expanded));menuButton.classList.toggle('active',!expanded);nav.classList.toggle('active',!expanded)});nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('active');menuButton.classList.remove('active');menuButton.setAttribute('aria-expanded','false')}))}
+    const yearEl=document.getElementById('year');if(yearEl)yearEl.textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
