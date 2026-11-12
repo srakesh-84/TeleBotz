@@ -206,3 +206,12 @@ body { background: #f7fafb; color: var(--vg-ink); }
   .home-usecase-page .home-usecase-hero { padding-top: 3rem; }
   .home-usecase-visual img { max-width: min(100%, 480px) !important; max-height: 320px !important; }
 }
+
+
+/* Shared contact strip displayed above the navigation on every page. */
+.vg-header-contact{background:#071b2c;color:#e2f8fc}
+.vg-header-contact-inner{max-width:1400px;margin:0 auto;padding:.45rem 2rem;display:flex;justify-content:flex-end;align-items:center;gap:1.5rem;font-size:.88rem;font-weight:600}
+.vg-header-contact a{color:#e2f8fc;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;white-space:nowrap}
+.vg-header-contact a:hover{color:#67e8f9}
+.vg-header-contact i{color:#67e8f9}
+@media(max-width:640px){.vg-header-contact-inner{justify-content:center;gap:.55rem 1rem;flex-wrap:wrap;padding:.5rem 1rem;font-size:.78rem}.vg-header-contact a{gap:.35rem}}
